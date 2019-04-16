@@ -1,76 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.navbar-container {
-    height: 60px;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 1px 1px 3px 1px black;
-    overflow: hidden;
-    z-index: 99;
-}
-
-.nav-bar-left {
-    float: left;
-    display: flex;
-    padding: 10px;
-    margin-top: 10px;
-    margin-right: 100px;
-    visibility: visible;
-}
-
-.nav-bar-right {
-    float: right;
-    display: flex;
-    padding: 10px;
-    margin-top: -38px;
-    margin-right: 100px;
-    visibility: visible;
-}
-
-.navbar-item {
-    font-family: 'Montserrat', sans-serif; 
-    text-decoration: none;
-    color: white;
-    opacity: 0.7;
-    padding: 20px;
-}
-
-.navbar-item:hover {
-    opacity: 1;
-}
-
-.navbar-item-icon {
-    opacity: 0.7;
-}
-
-.navbar-item-icon:hover {
-    opacity: 1;
-}
-
-.item-icon {
-    height: 30px;
-    width: 30px;
-}
-
-.item-icon-home {
-    height: 35px;
-    width: 35px;
-    margin: -9px 0px 0px 10px;
-}
-
-.footer-container {
-    height: 200px;
-    background-color: #1C2833;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif; 
-}
-
 .main-about-image {
     height: 2000px;
     width: 100%;
@@ -80,74 +7,6 @@ html, body {
     background-size: cover; 
     margin-bottom: -200px;
     opacity: 1;
-}
-
-.header-container {
-    width: 600px;
-    height: 120px;
-    padding: 0px;
-    display: inline-block;
-    position: absolute;
-    top: 600px;
-    left: 120px;
-}
-
-p.section-details {
-    padding-top: 10px;
-}
-
-.side-nav {
-    cursor: pointer;
-    visibility: hidden;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.sidenav {
-    height: 200px;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    font-family: 'Montserrat', sans-serif; 
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    opacity: 0.7;
-    display: block;
-    transition: 0.3s;
-  }
-  
-.sidenav a:hover {
-    opacity: 1;
-  }
-  
-.sidenav #closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.menu-bar {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-}
-
-#projects-container > p.section-details {
-    padding-top: 15px;
 }
 
 #about-container {
@@ -186,31 +45,8 @@ p.section-details {
     visibility: hidden;
 }
 
-#name, .section-header {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 60px;
-    color: white;
-    padding: 0px;
-    margin-bottom: 2px;
-    font-weight: bold;
-}
-
-#title, .section-details {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 20px;
-    color: white;
-    padding: 0px;
-    margin-top: 2px;
-}
-
-@media screen and (max-width: 800px) {
-    .header-container {
-        display: inline-block;
-        position: absolute;
-        top: 300px;
-        left: 120px;
-        width: 300px;
-    }
+#projects-container > p.section-details {
+    padding-top: 15px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -223,35 +59,5 @@ p.section-details {
 @media screen and (max-width: 645px) {
     #projects-container, #skills-container, #about-container {
         width: 300px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .side-nav {
-        visibility: visible;
-    }
-    .nav-bar-left {
-        visibility: hidden;
-    }
-    .nav-bar-right {
-        visibility: hidden;
-    }
-
-}
-
-
-@media screen and (max-width: 800px) {
-    .nav-bar-right {
-        visibility: hidden;
-    }
-
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }
