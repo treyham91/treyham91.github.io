@@ -1,0 +1,10 @@
+.main-about-image {
+    height: 2000px;
+    width: 100%;
+    background-image: url('../Static/Images/projects.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-bottom: -200px;
+    opacity: 1;
+}
