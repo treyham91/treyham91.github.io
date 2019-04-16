@@ -58,6 +58,12 @@ html, body {
     width: 30px;
 }
 
+.item-icon-home {
+    height: 35px;
+    width: 35px;
+    margin: -9px 0px 0px 10px;
+}
+
 .footer-container {
     height: 200px;
     background-color: #1C2833;
