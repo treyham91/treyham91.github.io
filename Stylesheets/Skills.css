@@ -8,3 +8,14 @@
     margin-bottom: -200px;
     opacity: 1;
 }
+
+#name, .section-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+

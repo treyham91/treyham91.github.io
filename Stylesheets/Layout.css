@@ -133,15 +133,6 @@ p.section-details {
     margin: 6px 0;
 }
 
-#name, .section-header {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 60px;
-    color: white;
-    padding: 0px;
-    margin-bottom: 2px;
-    font-weight: bold;
-}
-
 #title, .section-details {
     font-family: 'Montserrat', sans-serif; 
     font-size: 20px;

@@ -1,10 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+}
+
 .main-about-image {
-    height: 2000px;
+    height: 937px;
     width: 100%;
-    background-image: url('../Static/Images/trey_back1.png');
+    background-color: #2A2A2A;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
     margin-bottom: -200px;
     opacity: 1;
+}
+
+.form-container {
+    position: fixed;
+    left: 700px;
+    top: 180px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form { 
+    display: table;      
+}
+
+p { 
+    display: table-row;  
+}
+
+label { 
+    display: table-cell;
+}
+
+input { 
+    display: table-cell; 
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+textarea {
+    margin-left: 20px;
+    border-radius: 2%;
+    box-shadow: 1px 1px 2px 1px black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-label {
+    color: white;
+}
+
+#name, .section-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#form-header {
+    color: white; 
+    font-size: 40px;
+    position: fixed;
+    top: 70px;
+    left: 780px;
+}
+
+#contact-form-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    position: fixed;
+    top: 690px;
+    right: 620px;
 }

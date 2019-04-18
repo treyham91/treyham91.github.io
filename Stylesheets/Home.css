@@ -49,6 +49,15 @@
     padding-top: 15px;
 }
 
+#name, .section-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 1050px) {
     #projects-container {
         left: 120px;

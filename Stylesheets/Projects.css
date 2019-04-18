@@ -1,3 +1,12 @@
+.project-link  {
+    text-decoration: none;
+    color: white;
+}
+
+.project-link:hover {
+    opacity: 0.8;
+}
+
 .main-about-image {
     height: 2000px;
     width: 100%;
@@ -8,3 +17,34 @@
     margin-bottom: -200px;
     opacity: 1;
 }
+
+#name, .section-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.project-container {
+    width: 600px;
+    height: 120px;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 1050px;
+    left: 120px;
+    padding-top: 50px;
+}
+
+#project-right {
+    position: absolute;
+    left: 700px;
+}
+
+.section-details {
+    padding: 10px;
+    margin-left: 10px;
+} 

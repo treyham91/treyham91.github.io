@@ -59,6 +59,32 @@
             </div>
         </div>
         <div id="about-image" class="main-about-image">
+            <p id="form-header">Contact Me</p>
+            <div class="form-container">
+                <form class="contact-form" method="POST">
+                    <p>
+                        <label class="form-label">First Name</label>
+                        <input id="firstname-input" type="text" name="firstname" placeholder="First Name"><br>
+                    </p>
+                    <p>
+                        <label class="form-label">Last Name</label>
+                        <input id="lastname-input" type="text" name="lastname" placeholder="Last Name"><br>
+                    </p>
+                    <p>
+                        <label class="form-label">Email</label>
+                        <input id="email-input" type="text" name="email" placeholder="Email"><br>
+                    </p>
+                    <p>
+                        <label class="form-label">Phone Number (optional)</label>
+                        <input id="number-input" type="text" name="phonenumber" placeholder="Phone Number"><br>
+                    </p>
+                    <p>
+                        <label class="form-label" style="vertical-align: top;">Message</label>
+                        <textarea id="message-textarea" rows="20" cols="50" name="message"></textarea>
+                    </p>
+                    <button id="contact-form-button" onsubmit="submit">Send Message</button>
+                </form>
+            </div>
         </div>
         <footer class="footer-container">
             <div style="padding-top: 150px;">
