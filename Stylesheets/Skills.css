@@ -19,3 +19,56 @@
     font-weight: bold;
 }
 
+
+.skill-group-container {
+    width: 220px;
+    height: 120px;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 1000px;
+    left: 120px;
+}
+
+#skill-group-header-container {
+    padding: 5px;
+    border: solid white;
+    border-width: 100%;
+    opacity: 0.8;
+}
+
+.skill-group-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.skill-group-item {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: solid white;
+    border-width: 100%;
+    list-style-type: none;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#skill-group-item-container {
+    visibility: hidden;
+    height: 0px;
+    transition: height 2s;
+}
+
+#skill-group-header-container:hover {
+    opacity: 1;
+}
+

@@ -61,6 +61,21 @@
 @media screen and (max-width: 1050px) {
     #projects-container {
         left: 120px;
+        padding-bottom: 0px;
+    }
+
+    .footer-container {
+        height: 200px;
+    }
+
+    .section-header {
+        font-size: 50px;
+        padding-bottom: 5px;
+    }
+
+    .section-details {
+        font-size: 16px;
+        margin-top: 20px;
     }
 }
 
