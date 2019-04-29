@@ -7,5 +7,3 @@ function handleMouseOff(section) {
     section.style.transition = "0.2s";
     section.style.backgroundColor = "black";
 };
-
-//document.getElementById("this").style.boxShadow = 

@@ -9,31 +9,35 @@
     opacity: 1;
 }
 
-#name, .section-header {
+#name, .skill-group-header-container {
     font-family: 'Montserrat', sans-serif; 
     font-size: 60px;
     color: white;
     padding: 0px;
-    margin-bottom: 2px;
-    margin-top: 10px;
     font-weight: bold;
 }
 
+#skill-list-container {
+    width: 220px;
+    height: 120px;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 120px;
+    left: 500px;
+}
 
 .skill-group-container {
     width: 220px;
     height: 120px;
-    padding-bottom: 10px;
     display: inline-block;
     position: absolute;
     top: 1000px;
     left: 120px;
 }
 
-#skill-group-header-container {
+.skill-group-header-container {
     padding: 5px;
-    border: solid white;
-    border-width: 100%;
     opacity: 0.8;
 }
 
@@ -52,23 +56,65 @@
     font-size: 15px;
     color: white;
     padding: 5px;
-    margin-bottom: 2px;
-    margin-top: 10px;
     font-weight: bold;
-    border: solid white;
-    border-width: 100%;
     list-style-type: none;
-    opacity: 0;
-    transition: opacity 2s;
+    opacity: 1;
+}
+
+.header-container {
+    top: 450px;
 }
 
 #skill-group-item-container {
     visibility: hidden;
-    height: 0px;
+    height: 0%;
     transition: height 2s;
 }
 
-#skill-group-header-container:hover {
+.skill-group-header-container:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 1365px) {
+
+    .skill-group-header-container {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1145px) {
+    .skill-group-header-container {
+        font-size: 30px;
+    }
+
+    .skill-group-container {
+        top: 1150px;
+    }
+}
+
+@media screen and (max-width: 716px) {
+    .skill-group-container {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .skill-group-item-container {
+        visibility: hidden;
+    }
+
+    .skill-group-container {
+        width: 300px;
+        padding-top: 10px;
+    }
+}
+
+@keyframes projectTransition {
+    from {
+        transfrom: 2s;
+    }
+    to {
+        transfrom: o;
+    }
 }
 
