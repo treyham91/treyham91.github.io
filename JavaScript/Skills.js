@@ -17,11 +17,22 @@ var categoryItems = [
     { 'key': 'os', 'items': ['Windows', 'OSX'] },
 ];
 
-//<div id="skill-group-item-container">
-//<li class="skill-group-item">SQL Server</li>
-//</div>
+// Set our current skill section when the DOM loads
+document.getElementById("languages").setAttribute("name", "current");
+var skillsSection = document.getElementById("skill-list-container");
+var skillsListItem = document.createElement("li");
+var skillsContainer = document.createElement("div");
+skillsContainer.setAttribute("id", "skills-container");
+skillsSection.style.opacity = 1;
 
-//TODO: Change to toggle function between different skills sections
+for (var j = 0; j < categoryItems[0].items.length; j++) {
+    let skillsListItem = document.createElement("li");
+    skillsListItem.setAttribute("class", "skill-group-item");
+    skillsListItem.innerHTML = categoryItems[0].items[j];
+    skillsContainer.append(skillsListItem);
+}
+skillsSection.appendChild(skillsContainer);
+
 
 function showSkillDetails(section) {
     let sectionId = section.getAttribute("id");
@@ -33,33 +44,32 @@ function showSkillDetails(section) {
         if (sectionId === categoryItems[i].key) {
             for (var j = 0; j < categoryItems[i].items.length; j++) {
                 let skillsListItem = document.createElement("li");
-                skillsListItem.setAttribute("class", "skills-list-item");
+                skillsListItem.setAttribute("class", "skill-group-item");
                 skillsListItem.innerHTML = categoryItems[i].items[j]
                 skillsContainer.append(skillsListItem);
             }
+            skillsSection.style.opacity = 1;
             skillsSection.appendChild(skillsContainer);
         }
     }
 }
 
-function disableSkillShowDetails() {
-    let skillsContainer = document.getElementById("skill-list-container");
-    if (skillsContainer.isConnected) skillsContainer.style.visibility = 'hidden';
+
+function toggleSkillSection(section) {
+    let skillGroups = document.getElementsByClassName("skill-group-header-container");
+
+    for (var i = 0; i < skillGroups.length; i++) {
+        if (skillGroups[i].getAttribute("id") === section.getAttribute("id")) {
+            section.setAttribute("name", "current");
+
+            // Remove any skills container currently connected to the DOM
+            let skillsContainer = document.getElementById("skills-container");
+            if (skillsContainer.isConnected) skillsContainer.remove();
+
+            // Show the new section details
+            showSkillDetails(section);
+        } else {
+            skillGroups[i].setAttribute("name", "");
+        }
+    }
 }
-
-
-function handleMouseOver(section) {
-    section.style.transition = "0.3s";
-    section.style.backgroundColor = "#1C2833";
-    section.style.borderRight = "2px solid white";
-
-    showSkillDetails(section);
-};
-
-function handleMouseOff(section) {
-    section.style.transition = "0.2s";
-    section.style.backgroundColor = "black";
-    section.style.borderRight = "none";
-
-    disableSkillShowDetails();
-};
