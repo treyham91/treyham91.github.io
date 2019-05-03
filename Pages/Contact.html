@@ -58,41 +58,101 @@
                 </li>
             </div>
         </div>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById("contact").addEventListener("submit",
+                    function (event) {
+                        emailjs.init("");
+                        var status = false;
+
+                        let firstName = document.getElementById("firstname-input").value;
+                        let lastName = document.getElementById("lastname-input").value;
+                        let email = document.getElementById("email-input").value;
+                        let phoneNumber = document.getElementById("number-input").value;
+                        let message = document.getElementById("message-textarea").value;
+
+                        let firstFail = document.getElementById("first-fail");
+                        let lastFail = document.getElementById("last-fail");
+                        let emailFail = document.getElementById("email-fail");
+                        let messageFail = document.getElementById("message-fail");
+
+                        if (firstName === "") {
+                            firstFail.innerHTML = "Please enter your first name";
+                            firstFail.style.color = 'red';
+                        }
+
+                        if (lastName === "") {
+                            lastFail.innerHTML = "Please enter your last name";
+                            lastFail.style.color = 'red';
+                        }
+
+                        if (email === "") {
+                            emailFail.innerHTML = "Please enter a valid email";
+                            emailFail.style.color = 'red';
+                        }
+
+                        if (message === "") {
+                            messageFail.innerHTML = "You haven't typed a message yet";
+                            messageFail.style.color = 'red';
+                        }
+
+                        else {
+                            event.preventDefault();
+                            emailjs.sendForm('', '', this);
+                            status = true;
+                        }
+
+                        return status;
+                    })
+            }
+        </script>
         <div id="about-image" class="main-about-image">
             <p id="form-header">Contact Me</p>
             <div class="form-container">
-                <form class="contact-form" method="POST">
+                <form id="contact" action="#" class="contact-form">
                     <p>
                         <label class="form-label">First Name</label>
-                        <input id="firstname-input" type="text" name="firstname" placeholder="First Name"><br>
+                        <input id="firstname-input" type="text" name="firstname" placeholder="First Name">
+                        <div id="first-fail"></div><br>
                     </p>
                     <p>
                         <label class="form-label">Last Name</label>
-                        <input id="lastname-input" type="text" name="lastname" placeholder="Last Name"><br>
+                        <input id="lastname-input" type="text" name="lastname" placeholder="Last Name">
+                        <div id="last-fail"></div><br>
                     </p>
                     <p>
                         <label class="form-label">Email</label>
-                        <input id="email-input" type="text" name="email" placeholder="Email"><br>
+                        <input id="email-input" type="text" name="email" placeholder="Email">
+                        <div id="email-fail"></div><br>
                     </p>
                     <p>
                         <label class="form-label">Phone Number (optional)</label>
-                        <input id="number-input" type="text" name="phonenumber" placeholder="Phone Number"><br>
+                        <input id="number-input" type="text" name="phonenumber" placeholder="(000) 000-0000">
+                        <div id="number-fail"></div><br>
                     </p>
                     <p>
                         <label class="form-label" style="vertical-align: top;">Message</label>
                         <textarea id="message-textarea" rows="20" cols="50" name="message"></textarea>
+                        <div id="message-fail"></div>
                     </p>
-                    <button id="contact-form-button" onsubmit="submit">Send Message</button>
+                    <input id="contact-form-button" type="submit" value="Send Message"></input>
                 </form>
             </div>
         </div>
         <footer class="footer-container">
-            <div style="padding-top: 150px;">
-                <p style="color: white; font-size: 10px;">Icons By: Alpár-Etele Méder</p>
-                <p style="color: white; font-size: 10px;">You can find more icons <a
-                        href="https://thoseicons.com/">here!</a></p>
+            <p style="padding-top: 5px; color: white; font-size: 13px;">Download a copy of
+                my <a href="../Static/Files/Resume.pdf" style="color: royalblue; text-decoration: none;"
+                    download>Resume</a>
+            </p>
+            <div style="padding-top: 120px;">
+                <p style=" color: white; font-size: 10px;">Icons By: Alpár-Etele Méder</p>
+                <p style="color: white; font-size: 10px;">You can find more icons <a href="https://thoseicons.com/"
+                        style="color: royalblue; text-decoration: none;">here!</a></p>
             </div>
         </footer>
+
+        <script type="text/javascript" src="../JavaScript/Contact.js"></script>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 </body>
 
 </html>
