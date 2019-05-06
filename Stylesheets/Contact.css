@@ -25,7 +25,7 @@ input {
 }
 
 form { 
-    display: table;      
+    display: table;   
 }
 
 p { 
@@ -80,6 +80,72 @@ textarea {
     color: white;
     margin-top: 10px;
     position: fixed;
-    top: 690px;
-    right: 620px;
+    top: 660px;
+    left: 1150px;
+}
+
+@media screen and (max-width: 1320px) {
+    #contact-form-button {
+        left: 950px;
+    }
+
+    .form-container {
+        left: 500px;
+    }
+
+    #form-header {
+        left: 600px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #contact-form-button {
+        left: 700px;
+    }
+
+    .form-container {
+        left: 250px;
+    }
+
+    #form-header {
+        left: 350px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #contact-form-button {
+        left: 500px;
+    }
+
+    .form-container {
+        left: 50px;
+    }
+
+    #form-header {
+        left: 150px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #contact-form-button {
+        left: 290px;
+        font-size: 12px;
+    }
+
+    .form-container {
+        left: 50px;
+    }
+
+    #form-header {
+        left: 120px;
+    }
+
+    textarea {
+        width: 140px;
+        height: 150px;
+    }
+
+    input {
+        width: 110px;
+    }
 }
