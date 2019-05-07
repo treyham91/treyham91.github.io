@@ -40,3 +40,20 @@ window.onload = function () {
             }
         })
 }
+
+// Make sure that error messages are hidden when the inputs gets focus
+document.getElementById("firstname-input").onfocus(function () {
+    document.getElementById("first-fail").remove();
+});
+
+document.getElementById("lastname-input").onfocus(function () {
+    document.getElementById("last-fail").remove();
+});
+
+document.getElementById("email-input").onfocus(function () {
+    document.getElementById("email-fail").remove();
+});
+
+document.getElementById("message-input").onfocus(function () {
+    document.getElementById("message-fail").remove();
+});
