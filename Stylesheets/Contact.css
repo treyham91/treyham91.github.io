@@ -24,7 +24,7 @@ input {
     margin-bottom: 10px;
 }
 
-form { 
+#contact { 
     display: table;   
 }
 
@@ -74,6 +74,8 @@ textarea {
 }
 
 #contact-form-button {
+    height: 40px;
+    width: 145px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     background-color: black;
@@ -82,6 +84,19 @@ textarea {
     position: fixed;
     top: 660px;
     left: 1150px;
+    border: 1px solid #1C2833;
+}
+
+#contact-form-button:hover {
+    background-color: #1C2833;
+    border: 1px solid black;
+}
+
+#first-fail, #last-fail, #email-fail, #message-fail {
+    color: red;
+    font-size: 15px;
+    padding: 0px;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1320px) {

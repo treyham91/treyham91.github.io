@@ -1,59 +1,63 @@
 window.onload = function () {
-    document.getElementById("contact").addEventListener("submit",
-        function (event) {
+    document.getElementById("contact-form-button").addEventListener("click",
+        async function (event) {
             emailjs.init("user_mlIJr0OHx7aFpvjOuYlvF");
+            let formStatus = true;
 
-            let firstName = document.getElementById("firstname-input").value;
-            let lastName = document.getElementById("lastname-input").value;
-            let email = document.getElementById("email-input").value;
-            let message = document.getElementById("message-textarea").value;
+            let firstName = document.getElementById("firstname-input");
+            let lastName = document.getElementById("lastname-input");
+            let email = document.getElementById("email-input");
+            let message = document.getElementById("message-textarea");
 
             let firstFail = document.getElementById("first-fail");
             let lastFail = document.getElementById("last-fail");
             let emailFail = document.getElementById("email-fail");
             let messageFail = document.getElementById("message-fail");
 
-            if (firstName === "") {
-                firstFail.innerHTML = "Please enter your first name";
-                firstFail.style.color = 'red';
+            let firstLabel = document.getElementById("firstname-label");
+            let lastLabel = document.getElementById("lastname-label");
+            let emailLabel = document.getElementById("email-label");
+            let messageLabel = document.getElementById("message-label");
+
+            if (firstName.value === "") {
+                firstLabel.style.color = 'red';
+                firstFail.innerHTML = "Please enter a first name";
+                formStatus = false;
             }
 
-            if (lastName === "") {
-                lastFail.innerHTML = "Please enter your last name";
-                lastFail.style.color = 'red';
+            if (lastName.value === "") {
+                lastLabel.style.color = 'red';
+                lastFail.innerHTML = "Please enter a last name";
+                formStatus = false;
             }
 
-            if (email === "") {
-                emailFail.innerHTML = "Please enter a valid email";
-                emailFail.style.color = 'red';
+            if (email.value === "") {
+                emailLabel.style.color = 'red';
+                emailFail.innerHTML = "Please enter your email";
+                formStatus = false;
             }
 
-            if (message === "") {
+            if (message.value === "") {
+                messageLabel.style.color = 'red';
                 messageFail.innerHTML = "You haven't typed a message yet";
-                messageFail.style.color = 'red';
-                if (window.innerWidth >= 1039) document.getElementById("contact-form-button").style.left = '1210px';
+                formStatus = false;
+            }
+
+            if (formStatus) {
+                event.preventDefault();
+                await emailjs.sendForm('trey_hamilton21_gmail_com', 'template_ZYdWKszn', this);
             }
 
             else {
-                event.preventDefault();
-                emailjs.sendForm('trey_hamilton21_gmail_com', 'template_ZYdWKszn', this);
+                return formStatus;
             }
         })
 }
 
-// Make sure that error messages are hidden when the inputs gets focus
-document.getElementById("firstname-input").onfocus(function () {
-    document.getElementById("first-fail").remove();
-});
+function handleInputChange(label, failMessage) {
+    if (failMessage.innerHTML != "") {
+        failMessage.remove();
+    }
 
-document.getElementById("lastname-input").onfocus(function () {
-    document.getElementById("last-fail").remove();
-});
-
-document.getElementById("email-input").onfocus(function () {
-    document.getElementById("email-fail").remove();
-});
-
-document.getElementById("message-input").onfocus(function () {
-    document.getElementById("message-fail").remove();
-});
+    label.style.color = 'white';
+}
