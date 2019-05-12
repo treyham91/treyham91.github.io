@@ -59,5 +59,9 @@ function handleInputChange(label, failMessage) {
         failMessage.remove();
     }
 
+    if (failMessage.innerHTML === null) {
+
+    }
+
     label.style.color = 'white';
 }
