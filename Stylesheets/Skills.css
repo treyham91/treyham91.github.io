@@ -1,0 +1,126 @@
+h3 {
+    cursor: pointer;
+}
+
+.main-about-image {
+    height: 2000px;
+    width: 100%;
+    background-image: url('../Static/Images/skills.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-bottom: -200px;
+    opacity: 1;
+}
+
+#name, .skill-group-header-container {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 0px;
+    font-weight: bold;
+}
+
+#skill-list-container {
+    width: 220px;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 500px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.skill-group-container {
+    width: 220px;
+    height: 120px;
+    display: inline-block;
+    position: absolute;
+    top: 1000px;
+    left: 120px;
+}
+
+.skill-group-header-container {
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.skill-group-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 30px;
+    color: white;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.skill-group-item {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    list-style-type: none;
+    opacity: 0.9;
+}
+
+.header-container {
+    top: 450px;
+}
+
+div[name="current"] {
+    transition: 0.3s;
+    background-color: #1C2833;
+    border-right: 2px solid white;
+    opacity: 1;
+}
+
+#skill-group-item-container {
+    visibility: hidden;
+    height: 0%;
+    transition: height 2s;
+}
+
+.skill-group-header-container:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1365px) {
+
+    .skill-group-header-container {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #skill-list-container {
+        top: 330px;
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .skill-group-item-container {
+        visibility: hidden;
+    }
+
+    #skill-list-container {
+        top: 310px;
+        left: 0px;
+    }
+
+    .skill-group-item {
+        font-size: 15px;
+    }
+}
+
+@keyframes projectTransition {
+    from {
+        transfrom: 2s;
+    }
+    to {
+        transfrom: o;
+    }
+}
+

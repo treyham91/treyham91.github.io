@@ -1,0 +1,54 @@
+.main-about-image {
+    height: 2000px;
+    width: 100%;
+    background-image: url('../Static/Images/trey_back1.png');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    margin-bottom: -200px;
+    opacity: 1;
+}
+
+#name, .section-header {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 60px;
+    color: white;
+    padding: 0px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#about-container {
+    width: 600px;
+    height: 120px;
+    padding-bottom: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 1000px;
+    left: 120px;
+}
+
+@media screen and (max-width: 1365px) {
+    .section-details {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .section-details {
+        font-size: 15px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    #about-container {
+        top: 1100px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #about-container {
+        left: 30px;
+    }
+}

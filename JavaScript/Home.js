@@ -22,12 +22,3 @@ document.addEventListener('scroll', function () {
         skills.style.animation = 'fadein 3s';
     }
 })
-
-document.getElementById("side-nav-bar").addEventListener("click", function () {
-    this.classList.toggle("open");
-    document.getElementById("mySidenav").style.width = "250px";
-})
-
-document.getElementById("closebtn").addEventListener("click", function () {
-    this.style.width = "0";
-})
