@@ -3,8 +3,8 @@ module.exports = {
     emailConfig = {
 
         emailKeys = {
-            username: 'trey.hamilton21',
-            password: 'Rosherun2001!@#'
+            username: '',
+            password: ''
         },
 
         email = {
