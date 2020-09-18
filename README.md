@@ -1,4 +1,4 @@
 # personal-site
-My personal website written in HTML, CSS, and JavaScript.
+My personal website.
 
 [Portfolio Site](https://treyham91.github.io)
