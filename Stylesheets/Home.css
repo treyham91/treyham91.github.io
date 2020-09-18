@@ -1,11 +1,10 @@
 .main-about-image {
-    height: 2000px;
+    height: 100vh;
     width: 100%;
-    background-image: url('../Static/Images/trey_back1.png');
-    background-position: center;
+    background-image: url('../Static/Images/trey_back1.2.png');
     background-repeat: no-repeat; 
     background-size: cover; 
-    margin-bottom: -200px;
+    margin-bottom: -100px;
     opacity: 1;
 }
 
