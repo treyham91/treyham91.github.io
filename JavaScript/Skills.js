@@ -1,20 +1,17 @@
 var categoryItems = [
-    { 'key': 'languages', 'items': ['Python', 'JavaScript', 'C#', 'SQL', 'R'] },
+    { 'key': 'languages', 'items': ['Python', 'JavaScript', 'C#', 'SQL', 'PHP'] },
     {
-        'key': 'technologies', 'items': ['SQL Server', 'Visual Studio', '.NET Framework', 'SharePoint (Admin/Development)', 'React.js',
-            'Node.js',
-            'jQuery',
+        'key': 'technologies', 'items': [
+            'React.js',
+            'Vue.js',
             'Django',
-            'Angular 2',
-            'REST APIs',
+            'Node.js',
+            '.NET', 
             'HTML',
-            'CSS',
-            'Machine Learning',
-            'SQL Server Reporting Services',
-            'Windows Forms Applications',]
+            'CSS',]
     },
-    { 'key': 'databases', 'items': ['SQL Server', 'Oracle', 'MongoDB', 'SQLite',] },
-    { 'key': 'os', 'items': ['Windows', 'OSX'] },
+    { 'key': 'databases', 'items': ['SQL Server', 'Oracle', 'MongoDB', 'MySQL',] },
+    { 'key': 'os', 'items': ['Windows', 'OSX', 'Linux'] },
 ];
 
 // Set our current skill section when the DOM loads

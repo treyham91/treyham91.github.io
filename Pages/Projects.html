@@ -10,8 +10,7 @@
     <meta name="author" content="Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../Stylesheets/Layout.css">
-    <link rel="stylesheet" href="../Stylesheets/Projects.css">
+    <link rel="stylesheet" href="../Stylesheets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
 </head>
@@ -20,13 +19,13 @@
     <div>
         <div class="navbar-container">
             <div class="nav-bar-left">
-                <a href="index.html" class="navbar-item-home">
+                <a href="../index.html" class="navbar-item-home">
                     <img class="item-icon-home" src="../Static/Images/trey_face.png" />
                 </a>            
-                <a href="Pages/About.html" class="navbar-item">About</a>
-                <a href="Pages/Projects.html" class="navbar-item">Projects</a>
-                <a href="Pages/Skills.html" class="navbar-item">Skills</a>
-                <a href="Pages/Contact.html" class="navbar-item">Contact</a>
+                <a href="/Pages/About.html" class="navbar-item">About</a>
+                <a href="/Pages/Projects.html" class="navbar-item">Projects</a>
+                <a href="/Pages/Skills.html" class="navbar-item">Skills</a>
+                <a href="/Pages/Contact.html" class="navbar-item">Contact</a>
             </div>
             <div id="side-nav-bar" class="side-nav">
                 <div class="menu-bar"></div>
@@ -35,46 +34,23 @@
             </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" id="closebtn">&times;</a>
-                <a href="Pages/About.html">About</a>
-                <a href="Pages/Projects.html">Projects</a>
-                <a href="Pages/Skills.html">Skills</a>
-                <a href="Pages/Contact.html">Contact</a>
+                <a href="/Pages/About.html">About</a>
+                <a href="/Pages/Projects.html">Projects</a>
+                <a href="/Pages/Skills.html">Skills</a>
+                <a href="/Pages/Contact.html">Contact</a>
             </div>
         </div>
         <div id="about-image" class="main-about-image">
-            <div class="header-container">
-                <p id="name">Projects</p>
-            </div>
-            <div class="project-container">
-                <div onmouseover="handleMouseOver(this)" onmouseout="handleMouseOff(this)" id="section"
-                    class="section-container">
-                    <p class="section-header"><a class="project-link"
-                            href="https://github.com/treyham91/pytest">pytest</a></p>
-                    <p class="section-details">A random assembly of python code I've written</p>
+            <div id="projects">
+                <div>
+                    <p class="name">Projects</p>
                 </div>
-                <div onmouseover="handleMouseOver(this)" onmouseout="handleMouseOff(this)" id="project-right"
-                    class="section-container">
-                    <p class="section-header"><a class="project-link"
-                            href="https://github.com/treyham91/golfpal-web">golfpal</a></p>
-                    <p class="section-details">Social media golf app using GraphQL + React
-                    </p>
-                </div>
-                <div onmouseover="handleMouseOver(this)" onmouseout="handleMouseOff(this)" id="section"
-                    class="section-container">
-                    <p class="section-header"><a class="project-link"
-                            href="https://github.com/treyham91/blogsite">A Blog Site</a>
-                    </p>
-                    <p class="section-details">Blog site powered by Django and Bootstrap</p>
+                <div class="project-container">
                 </div>
             </div>
         </div>
         <footer class="footer-container">
-            <p style="padding-top: 5px; color: white; font-size: 13px;">Download a copy of
-                my <a href="../Static/Files/Resume.pdf" style="color: royalblue; text-decoration: none;"
-                    download>Resume</a><br />
-                <a href="https://treyham91.github.io/personal-site-react/" style="text-decoration: none;">New Site</a>
-            </p>
-            <div style="padding-top: 120px;">
+            <div>
                 <p style=" color: white; font-size: 10px;">Icons By: Alpár-Etele Méder</p>
                 <p style="color: white; font-size: 10px;">You can find more icons <a href="https://thoseicons.com/"
                         style="color: royalblue; text-decoration: none;">here!</a></p>

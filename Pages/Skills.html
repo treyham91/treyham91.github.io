@@ -6,12 +6,9 @@
     <meta charset="utf-8">
 
     <title>Trey Hamilton</title>
-    <meta name="description" content="Trey Hamilton">
-    <meta name="author" content="Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../Stylesheets/Layout.css">
-    <link rel="stylesheet" href="../Stylesheets/Skills.css">
+    <link rel="stylesheet" href="../Stylesheets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
 </head>
@@ -20,13 +17,13 @@
     <div>
         <div class="navbar-container">
             <div class="nav-bar-left">
-                <a href="index.html" class="navbar-item-home">
+                <a href="../index.html" class="navbar-item-home">
                     <img class="item-icon-home" src="../Static/Images/trey_face.png" />
                 </a>            
-                <a href="Pages/About.html" class="navbar-item">About</a>
-                <a href="Pages/Projects.html" class="navbar-item">Projects</a>
-                <a href="Pages/Skills.html" class="navbar-item">Skills</a>
-                <a href="Pages/Contact.html" class="navbar-item">Contact</a>
+                <a href="/Pages/About.html" class="navbar-item">About</a>
+                <a href="/Pages/Projects.html" class="navbar-item">Projects</a>
+                <a href="/Pages/Skills.html" class="navbar-item">Skills</a>
+                <a href="/Pages/Contact.html" class="navbar-item">Contact</a>
             </div>
             <div id="side-nav-bar" class="side-nav">
                 <div class="menu-bar"></div>
@@ -35,41 +32,40 @@
             </div>
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" id="closebtn">&times;</a>
-                <a href="Pages/About.html">About</a>
-                <a href="Pages/Projects.html">Projects</a>
-                <a href="Pages/Skills.html">Skills</a>
-                <a href="Pages/Contact.html">Contact</a>
+                <a href="/Pages/About.html">About</a>
+                <a href="/Pages/Projects.html">Projects</a>
+                <a href="/Pages/Skills.html">Skills</a>
+                <a href="/Pages/Contact.html">Contact</a>
             </div>
         </div>
         <div id="about-image" class="main-about-image">
-            <div class="header-container">
-                <p id="name">Skills</p>
-            </div>
-            <div class="skill-group-container">
-                <div onclick="toggleSkillSection(this)" id="languages" class="skill-group-header-container">
-                    <h3 class="skill-group-header">Languages</h3>
+            <div id="skills">
+                <div>
+                    <p class="name">Skills</p>
                 </div>
-                <div onclick="toggleSkillSection(this)" id="technologies" class="skill-group-header-container">
-                    <h3 class="skill-group-header">Technologies</h3>
-                </div>
-                <div onclick="toggleSkillSection(this)" id="databases" class="skill-group-header-container">
-                    <h3 class="skill-group-header">Databases</h3>
-                </div>
-                <div onclick="toggleSkillSection(this)" id="os" class="skill-group-header-container">
-                    <h3 class="skill-group-header">Operating Systems</h3>
-                </div>
-                <div id="skill-list-container">
+                <div class="skill-group-container">
+                    <div>
+                        <div onclick="toggleSkillSection(this)" id="languages" class="skill-group-header-container">
+                            <h3 class="skill-group-header">Languages</h3>
+                        </div>
+                        <div onclick="toggleSkillSection(this)" id="technologies" class="skill-group-header-container">
+                            <h3 class="skill-group-header">Technologies</h3>
+                        </div>
+                        <div onclick="toggleSkillSection(this)" id="databases" class="skill-group-header-container">
+                            <h3 class="skill-group-header">Databases</h3>
+                        </div>
+                        <div onclick="toggleSkillSection(this)" id="os" class="skill-group-header-container">
+                            <h3 class="skill-group-header">Operating Systems</h3>
+                        </div>
+                    </div>
+                    <div id="skill-list-container">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer-container">
-        <p style="padding-top: 5px; color: white; font-size: 13px;">Download a copy of
-            my <a href="../Static/Files/Resume.pdf" style="color: royalblue; text-decoration: none;" download>Resume</a>
-            <br />
-                <a href="https://treyham91.github.io/personal-site-react/" style="text-decoration: none;">New Site</a>
-        </p>
-        <div style="padding-top: 120px;">
+        <div>
             <p style=" color: white; font-size: 10px;">Icons By: Alpár-Etele Méder</p>
             <p style="color: white; font-size: 10px;">You can find more icons <a href="https://thoseicons.com/"
                     style="color: royalblue; text-decoration: none;">here!</a></p>
@@ -77,8 +73,6 @@
     </footer>
 
     <script type="text/javascript" src="../JavaScript/Skills.js"></script>
-    <!--We will import the mouseover and mouseoff functions from the projects.js file-->
-    <script type="text/javascript" src="../JavaScript/Projects.js"></script>
     <script src="../JavaScript/Layout.js"></script>
 </body>
 

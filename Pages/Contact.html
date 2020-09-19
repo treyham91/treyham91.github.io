@@ -6,12 +6,9 @@
     <meta charset="utf-8">
 
     <title>Trey Hamilton</title>
-    <meta name="description" content="Trey Hamilton">
-    <meta name="author" content="Portfolio Site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../Stylesheets/Layout.css">
-    <link rel="stylesheet" href="../Stylesheets/Contact.css">
+    <link rel="stylesheet" href="../Stylesheets/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
 </head>
@@ -19,13 +16,13 @@
 <body>
     <div class="navbar-container">
         <div class="nav-bar-left">
-            <a href="index.html" class="navbar-item-home">
+            <a href="../index.html" class="navbar-item-home">
                 <img class="item-icon-home" src="../Static/Images/trey_face.png" />
             </a>            
-            <a href="Pages/About.html" class="navbar-item">About</a>
-            <a href="Pages/Projects.html" class="navbar-item">Projects</a>
-            <a href="Pages/Skills.html" class="navbar-item">Skills</a>
-            <a href="Pages/Contact.html" class="navbar-item">Contact</a>
+            <a href="/Pages/About.html" class="navbar-item">About</a>
+            <a href="/Pages/Projects.html" class="navbar-item">Projects</a>
+            <a href="/Pages/Skills.html" class="navbar-item">Skills</a>
+            <a href="/Pages/Contact.html" class="navbar-item">Contact</a>
         </div>
         <div id="side-nav-bar" class="side-nav">
             <div class="menu-bar"></div>
@@ -34,16 +31,16 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" id="closebtn">&times;</a>
-            <a href="Pages/About.html">About</a>
-            <a href="Pages/Projects.html">Projects</a>
-            <a href="Pages/Skills.html">Skills</a>
-            <a href="Pages/Contact.html">Contact</a>
+            <a href="/Pages/About.html">About</a>
+            <a href="/Pages/Projects.html">Projects</a>
+            <a href="/Pages/Skills.html">Skills</a>
+            <a href="/Pages/Contact.html">Contact</a>
         </div>
     </div>
     <div id="about-image" class="main-about-image">
         <p id="form-header">Contact Me</p>
         <div class="form-container">
-            <div id="contact" class="contact-form">
+            <div id="contact-form">
                 <p>
                     <label id="firstname-label" class="form-label">First Name</label>
                     <input
@@ -81,19 +78,16 @@
         </div>
     </div>
     <footer class="footer-container">
-        <!-- <p style="padding-top: 5px; color: white; font-size: 13px;">Download a copy of
-            my <a href="../Static/Files/Resume.pdf" style="color: royalblue; text-decoration: none;" download>Resume</a>
-        </p>
-        <div style="padding-top: 120px;">
+        <div>
             <p style=" color: white; font-size: 10px;">Icons By: Alpár-Etele Méder</p>
             <p style="color: white; font-size: 10px;">You can find more icons <a href="https://thoseicons.com/"
                     style="color: royalblue; text-decoration: none;">here!</a></p>
-        </div> -->
+        </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript" src="../JavaScript/Contact.js"></script>
     <script src="../JavaScript/Layout.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 </body>
 
 </html>
